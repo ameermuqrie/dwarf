@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <title>Final Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="header-with-image">
+      <img src="dwarf.png" alt="Solar Icon" class="quiz-icon">
+      <h1>Final Quiz</h1>
+    </div>
+    <div id="timer">Time Left: 10s</div>
+    <div id="countdown" class="countdown"></div>
+    <div id="question">Loading...</div>
+    <div id="choices"></div>
+    <div id="feedback"></div>
+    <button id="next-btn" style="display: none;">➡️ Next Question</button>
+    <button id="try-again" style="display: none;">🔁 Try Again</button>
+    <div id="leaderboard">
+      <h2>🏆 Leaderboard (Top 10)</h2>
+      <ol id="leaderboard-list"></ol>
+    </div>
+  </div>
+
+  <audio id="correct-sound" src="correct.wav"></audio>
+  <audio id="wrong-sound" src="incorrect.wav"></audio>
+  <audio id="leaderboard-sound" src="leaderboard.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
